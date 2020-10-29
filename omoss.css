@@ -1,0 +1,359 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: 0.018rem;
+  color: #080708;
+}
+
+body {
+  font-family: "Roboto-light", "Roboto-regular", sans-serif;
+  background-color: #fbfff1;
+  margin: 0;
+  width: 100%;
+  background-image: url(images/morocco-1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+article {
+  margin-bottom: 50px;
+}
+
+article>p {
+  text-align: center;
+}
+
+section {
+  margin: 20px;
+  border-radius: 10px;
+}
+
+section p {
+  padding: 0px 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+section h3 {
+  text-align: center;
+  color: #080708;
+  font-size: 2rem;
+}
+
+article {
+  padding-top: 100px;
+}
+
+article>p {
+  padding: 0px 50px;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  text-transform: uppercase;
+  font-family: "Roboto-regular";
+  top: 0;
+}
+
+/* NAVBAR */
+.navbar {
+  font-size: 16px;
+  background-color: #fbfff1;
+  padding-bottom: 10px;
+  z-index: 999;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: #080708;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 10px auto;
+  line-height: 1.6rem;
+  letter-spacing: 0.18rem;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+  letter-spacing: 0.2rem;
+  font-family: "Roboto-bold";
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: #080708;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+/* HAMBURGER */
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+svg {
+  margin-top: -5px;
+}
+
+/* HOVER COLOR ON SMALL SCREEN*/
+.logo:hover,
+#js-navbar-toggle:hover,
+.nav-links:hover,
+footer li:hover {
+  color: #df2935;
+}
+
+#Mechaniker {
+  background-color: #fbfff1;
+  color: #080708;
+}
+
+#MechanicEngineer {
+  background-color: #fbfff1;
+  ;
+}
+
+#DackEngineer {
+  background-color: #fbfff1;
+  color: #080708;
+}
+
+#Mechaniker #MechanicEngineer #DackEngineer {
+  max-height: 100%;
+}
+
+.button {
+  text-transform: uppercase;
+  background-color: #080708;
+  color: #fbfff1;
+  height: 35px;
+  width: 80px;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  font-family: "Roboto-regular";
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #b82236;
+}
+
+.buttonS {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-decoration: none;
+  color: #080708;
+  background-color: #fbfff1;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+footer p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer a:hover {
+  color: #df2935;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #080708;
+}
+
+a:active {
+  color: #A8111B;
+}
+
+
+body>footer:nth-child(3)>p:nth-child(2) {
+  margin-bottom: 0px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+    z-index: 99999;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 99999;
+  }
+
+  .main-nav li {
+    margin: 0;
+    line-height: 1.6rem;
+    letter-spacing: 0.18rem;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+    letter-spacing: 2px
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  /* HOVER COLOR ON BIG SCREEN */
+  .logo:hover,
+  .nav-links:hover {
+    /* color: rgb(240, 144, 18); */
+    color: #df2935;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
+  }
+
+  section {
+    width: 33%;
+  }
+
+  /* FOOTER */
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+  }
+
+  footer li {
+    margin: 20px;
+  }
+
+  footer p {
+    text-align: center;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+  }
+
+}
+
+
+
+/* FONTS */
+@font-face {
+  font-family: Roboto-regular;
+  src: url(fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-light;
+  src: url(fonts/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-bold;
+  src: url(fonts/Roboto-Bold.ttf) format('truetype');
+}

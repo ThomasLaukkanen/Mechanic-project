@@ -1,0 +1,839 @@
+/* UNIVERSAL SELECTOR*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  letter-spacing: 0.018rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* BODY */
+body {
+  font-family: "Roboto-light", "Roboto-regular", sans-serif;
+  width: 100%;
+  background-color: #fbfff1;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  text-transform: uppercase;
+  font-family: "Roboto-regular";
+}
+
+/* NAVBAR */
+.navbar {
+  font-size: 16px;
+  background-color: #fbfff1;
+  padding-bottom: 10px;
+  z-index: 999;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: #080708;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 10px auto;
+  line-height: 1.6rem;
+  letter-spacing: 0.18rem;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+  letter-spacing: 0.2rem;
+  font-family: "Roboto-bold";
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: #080708;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+/* HAMBURGER MENU */
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+svg {
+  margin-top: -5px;
+}
+
+/* HOVER COLOR ON SMALL SCREEN*/
+.logo:hover,
+#js-navbar-toggle:hover,
+.nav-links:hover,
+footer li:hover {
+  color: #df2935;
+}
+
+/* LANDING PAGE */
+#containerCar {
+  background-image: url(images/car-race768x512.jpg);
+  margin: 0;
+  padding: 0;
+  min-height: 50vh;
+  min-width: 100%;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+}
+
+#search {
+  color: #fbfff1;
+  justify-content: center;
+  margin: auto;
+  font-family: "Roboto-bold";
+}
+
+#search form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#regnummer {
+  height: 35px;
+  width: 125px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  font-family: "Roboto-regular";
+}
+
+#button {
+  text-transform: uppercase;
+  background-color: #df2935;
+  color: #fbfff1;
+  height: 35px;
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  font-family: "Roboto-bold";
+}
+
+#button:hover {
+  background-color: #b82236;
+}
+
+#search h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #fbfff1;
+  padding-top: 100px;
+}
+
+#search p {
+  text-align: center;
+  color: #fbfff1;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  font-family: "Roboto-light";
+  padding: 10px;
+  text-shadow: black 0px 0px 10px;
+
+}
+
+#containerCar i {
+  align-self: center;
+  font-size: 50px;
+}
+
+/* INTRO TEXT */
+#introText {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 100vh;
+  margin: 50px;
+}
+
+#introText h2,
+#introText i {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#introText i {
+  font-size: 20px;
+}
+
+/* MAIN */
+main {
+  text-align: center;
+  background-color: #df2935;
+  color: #fbfff1;
+}
+
+main img {
+  height: 330px;
+  width: 340px;
+  object-fit: cover;
+}
+
+main h2,
+main p,
+main h1,
+main h3 {
+  margin: 20px 50px 20px;
+}
+
+main h2,
+main h3 {
+  padding-top: 20px;
+}
+
+#service,
+#felsokning,
+#solfilm {
+  max-height: 100%;
+}
+
+#solfilm p {
+  padding-bottom: 20px;
+}
+
+main article {
+  min-height: 100%;
+}
+
+/* DÄCK */
+#containerDack {
+  background-color: #fbfff1;
+  color: #080708;
+}
+
+#containerDack p,
+#containerDack ul,
+#containerDack h2,
+#containerdack h3 {
+  padding-bottom: 10px;
+  margin: 50px;
+}
+
+#containerDack h2,
+#containerDack h3 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#containerDack ul {
+  padding-bottom: 50px;
+}
+
+#containerDack img {
+  width: 100%;
+}
+
+#dack5>h2:nth-child(1) {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+#dack0 {
+  background-color: #3772ff;
+  color: #080708;
+}
+
+#dack2 {
+  background-color: #3772ff;
+  color: #080708;
+}
+
+#dack2 p {
+  padding-bottom: 20px;
+}
+
+#dack5 {
+  grid-area: fem;
+  background-color: #080708;
+  color: #fbfff1;
+}
+
+#dack5 p {
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
+
+/* HITTA TILL OSS */
+#hittaOss {
+  background-color: #fdca40;
+}
+
+#hittaOss h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#hittaOss p,
+#hittaOss ul,
+#hittaOss h3 {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#hittaOss+h3 {
+  padding-top: 20px;
+}
+
+#phone {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#nummer:hover {
+  color: #df2935;
+}
+
+#nummer {
+  color: black;
+}
+
+
+#map {
+  margin: 20px auto;
+  width: 100%;
+  height: 500px;
+  background-color: #080708;
+  z-index: 1;
+}
+
+#tider {
+  margin-top: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-decoration: none;
+  color: #080708;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+footer p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer a:hover {
+  color: #df2935;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #080708;
+}
+
+a:active {
+  color: #A8111B;
+}
+
+/* MININUMBER */
+#miniNumber {
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.694);
+  color: #fbfff1;
+  position: sticky;
+  z-index: 9999;
+  top: 46.4px;
+}
+
+#miniNumber a:hover {
+  color: #A8111B;
+}
+
+#miniNumber a {
+  color: #fbfff1;
+}
+
+
+/* LASTFIX */
+
+* h2 {
+  font-size: 2rem;
+}
+
+/* ANIMATIONS  */
+#blink {
+  animation: blinker 1.5s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+}
+
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+.bg-pan-bl {
+  -webkit-animation: bg-pan-bl 8s both;
+  animation: bg-pan-bl 8s both;
+}
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+/* SCROLLBAR BONUS */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: #404040; */
+  background: #3772ff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #df2935;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a91f28;
+}
+
+/* MEDIA QUERYS CHANGE THIS AFTER 768PX */
+@media screen and (min-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+    z-index: 99999;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 99999;
+  }
+
+  .main-nav li {
+    margin: 0;
+    line-height: 1.6rem;
+    letter-spacing: 0.18rem;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+    letter-spacing: 2px
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  /* HOVER COLOR ON BIG SCREEN */
+  .logo:hover,
+  .nav-links:hover {
+    /* color: rgb(240, 144, 18); */
+    color: #df2935;
+  }
+
+  /* LANDINGPAGE */
+  #containerCar {
+    background-image: url(images/car-race-1920.jpg);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-width: 100%;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+  }
+
+  #search h1 {
+    font-size: 5rem;
+  }
+
+  #search p {
+    font-size: 2.2rem;
+  }
+
+
+  /* INTRO */
+  #introText {
+    margin: auto;
+  }
+
+  #introText h2 {
+    font-size: 2.5rem;
+  }
+
+  /* MAIN GRIDBOX */
+  main article {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "service felsokning solfilm";
+    height: 100%;
+    color: #fbfff1;
+  }
+
+  #service {
+    grid-area: service;
+    margin-top: 50px;
+  }
+
+  #felsokning {
+    grid-area: felsokning;
+    margin-top: 50px;
+  }
+
+  #solfilm {
+    grid-area: solfilm;
+    margin-top: 50px;
+  }
+
+  main article>h2 {
+    font-size: 2.5rem;
+  }
+
+  main article>h2 {
+    grid-area: header;
+  }
+
+  /* DÄCK */
+
+  #containerDack {
+    display: grid;
+    grid-template-areas:
+      "tex text text"
+      "noll ett tva"
+      "tre fyra  fyra"
+      "fem fem fem";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #containerDack>h2 {
+    grid-area: text;
+    font-size: 2.5rem;
+    grid-column: 1 / 4;
+    margin: 25px;
+  }
+
+  #dack0 {
+    grid-area: noll;
+    background-color: #3772ff;
+    color: #080708;
+  }
+
+  #dack0>h2 {
+    color: #fbfff1;
+  }
+
+  #dack1 {
+    grid-area: ett;
+  }
+
+  #dack2 {
+    grid-area: tva;
+    background-color: #3772ff;
+    color: #080708;
+  }
+
+  #dack2>h2 {
+    color: #fbfff1;
+  }
+
+  #dack3 {
+    grid-area: tre;
+  }
+
+  #dack4 {
+    grid-area: fyra;
+
+  }
+
+  #dack5 {
+    grid-area: fem;
+  }
+
+  #dack5>h2 {
+    padding: 25px;
+  }
+
+  #dack5 img {
+    height: 700px;
+    object-fit: cover;
+  }
+
+  #dack5>h2:nth-child(1) {
+    font-size: 2.5rem;
+  }
+
+  /* FOOTER */
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+  }
+
+  footer li {
+    margin: 20px;
+  }
+
+  footer p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #miniNumber {
+    top: 70px;
+  }
+
+  header {
+    z-index: 999;
+  }
+
+  #blink {
+    animation: blinker 1.5s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+  }
+
+  /* LAST FIX */
+  h2 {
+    font-size: 2.5rem;
+  }
+
+}
+
+/* KEYFRAMES FOR ANIMATIONS */
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-9-12 13:16:6
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-9-12 13:21:15
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation bg-pan-bl
+ * ----------------------------------------
+ */
+@-webkit-keyframes bg-pan-bl {
+  0% {
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes bg-pan-bl {
+  0% {
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-9-12 13:34:49
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/* FONTS */
+@font-face {
+  font-family: Roboto-regular;
+  src: url(fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-light;
+  src: url(fonts/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-bold;
+  src: url(fonts/Roboto-Bold.ttf) format('truetype');
+}

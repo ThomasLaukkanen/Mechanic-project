@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om oss</title>
+  <link href="omoss.css" rel="stylesheet" />
+  <meta name="description=" content="Om HTH CARS. Vi är ett litet företag i Göteborg. Vi repererar alla bilmärken" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <button class="menu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          aria-label="Main Menu">
+          <svg width="35" height="35" viewBox="0 0 100 100">
+            <path class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+      </span>
+      <a href="index.html" class="logo">HTH CARS</a>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="index.html" class="nav-links">Hem</a>
+        </li>
+        <li>
+          <a href="bokatid.html" class="nav-links">Boka tid</a>
+        </li>
+        <li>
+          <a href="omoss.html" class="nav-links">Om oss</a>
+        </li>
+        <li>
+          <a href="blogg.html" class="nav-links">Blogg</a>
+        </li>
+        <li>
+          <a href="index.html#hittaOss" class="nav-links">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- ARTICLE -->
+  <article>
+    <h2 style="text-align: center">Om HTH CARS AB.</h2>
+    <p>
+      Din bilverkstad i Göteborg. Med 30 års erfarenhet av servis,
+      reparationer och felsökning på bilar. På HTH CARS jobbar vi enbart med
+      originaldelar och den senaste utrustningen marknaden kan erbjuda.
+      Självklart följer vi alltid tillverkarnas rekommendationer vid service
+      och reparation. Vi lämnar 12 månaders garanti på utfört arbete och 24
+      månaders garanti på reservdelarna. Boka din service eller reparation i
+      förväg, så bjuder vi på fri lånebil!
+      <br />
+      Att äga bil ska vara enkelt!
+    </p>
+    <div id="container">
+      <section id="Mechaniker">
+        <img alt="images" srcset="images/CEO-HTH-320w.jpg 1.5x, 
+            images/CEO-HTH-640.jpg 2x,
+            images/CEO-HTH-980w.jpg" src="images/CEO-HTH-980w.jpg" />
+        <h3>Elon Musk</h3>
+        <p>VD & Grundare</p>
+        <p>Elon Musk är grundaren av HTH CARS.
+
+        </p>
+        <p>elonmusk@hth-cars.com</p>
+        <div class="buttonS"><button class="button">Contact</button></div>
+      </section>
+
+      <section id="MechanicEngineer">
+        <img alt="images" srcset="
+              images/Director-HTH-320w.jpg 1.5x,
+              images/Director-HTH-640w.jpg 2x
+            " src="images/Director-HTH.jpg" />
+        <h3>Mike Ross</h3>
+        <p>Revisor</p>
+        <p>Mike Ross är revisor på HTH CARS.</p>
+        <p>mike@hth-cars.com</p>
+        <div class="buttonS"><button class="button">Contact</button>
+        </div>
+      </section>
+
+      <section id="DackEngineer">
+        <img alt="images" srcset="
+              images/mekaniker-HTH-320w.jpg 1.5x,
+              images/mekaniker-HTH-640.jpg 2x
+            " src="images/mekaniker-HTH.jpg" />
+        <h3>Richard Eriksson</h3>
+        <p>Mekaniker</p>
+        <p>Ricard Ericksson är mekaniker på HTH CARS.</p>
+        <p>mike@hth-cars.com</p>
+        <div class="buttonS"><button class="button">Contact</button></div>
+      </section>
+    </div>
+  </article>
+
+  <!-- FOOTER -->
+  <footer>
+    <ul>
+      <li>
+        <a href="#">Information om Cookies</a>
+      </li>
+      <li>
+        <a href="#">Hantering av personuppgifter</a>
+      </li>
+      <li>
+        <a href="#">Juridisk information</a>
+      </li>
+      <li>
+        <a href="#">Logga in</a>
+      </li>
+    </ul>
+    <p>Copyright © 2020 HTH CARS AB</p>
+  </footer>
+
+  <!-- JAVASCRIPT FOR NAV -->
+  <script>
+    let mainNav = document.getElementById("js-menu");
+    let navBarToggle = document.getElementById("js-navbar-toggle");
+
+    navBarToggle.addEventListener("click", function () {
+      mainNav.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>

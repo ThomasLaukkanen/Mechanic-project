@@ -1,0 +1,388 @@
+/* BODY */
+body {
+  font-family: "Roboto-light", "Roboto-regular", sans-serif;
+  width: 100%;
+  margin: 0;
+  background-image: url(images/hund-1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html {
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100%;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  text-transform: uppercase;
+  font-family: "Roboto-regular";
+  top: 0
+}
+
+/* NAVBAR */
+.navbar {
+  font-size: 16px;
+  background-color: #fbfff1;
+  padding-bottom: 10px;
+  z-index: 999;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 10px auto;
+  line-height: 1.6rem;
+  letter-spacing: 0.18rem;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+  letter-spacing: 0.2rem;
+  font-family: "Roboto-bold";
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: #000;
+  font-size: 24px;
+}
+
+.active {
+  display: block;
+}
+
+/* HAMBURGER */
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+svg {
+  margin-top: -5px;
+}
+
+/* HOVER COLOR ON SMALL SCREEN*/
+.logo:hover,
+#js-navbar-toggle:hover,
+.nav-links:hover,
+footer li:hover {
+  color: #df2935;
+}
+
+
+/* CONTACT FORM */
+#contact-form {
+  background-color: #fbfff1;
+  width: 465px;
+  padding: 20px;
+  margin: 50px auto;
+  display: grid;
+  /* border-radius: 15px; */
+  position: relative;
+  margin-top: 125px;
+  border-radius: 10px;
+  margin-bottom: 200px;
+}
+
+#contact-form h1 {
+  font-size: 42px;
+}
+
+.clearfix {
+  font-size: 14;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label {
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+  width: 450px;
+  border: 1px solid #cee1e8;
+  margin-bottom: 20px;
+  padding: 4px;
+}
+
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+  border: 1px solid #afcdd8;
+  background-color: #ebf2f4;
+}
+
+#contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+#contact-form label {
+  display: block;
+}
+
+#contact-form #submit-button:hover {
+  background-color: #a6cfdd;
+}
+
+#contact-form #submit-button:active {
+  position: relative;
+  top: 1px;
+}
+
+#contact-form #loading {
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  right: 130px;
+  bottom: 16px;
+  display: none;
+}
+
+#errors {
+  border: solid 1px #e58e8e;
+  padding: 10px;
+  margin: 25px 0px;
+  display: block;
+  width: 437px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background: #ffe6e6 url no-repeat 405px center;
+  display: none;
+}
+
+#errors li {
+  padding: 2px;
+  list-style: none;
+}
+
+#errors li:before {
+  content: " - ";
+}
+
+/* FOOTER */
+footer {
+  text-decoration: none;
+  color: #000;
+  background-color: #fbfff1;
+  margin-top: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+footer p {
+  padding-bottom: 20px;
+  text-align: center;
+  margin-bottom: 0;
+
+}
+
+footer a:hover {
+  color: #df2935;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #000;
+}
+
+a:active {
+  color: #A8111B;
+}
+
+/* Element | http://localhost:5500/bokatid.html */
+
+body>footer:nth-child(3)>p:nth-child(2) {
+  margin-bottom: 0px;
+}
+
+
+/* SCROLLBAR BONUS */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: #404040; */
+  background: #3772ff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #df2935;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a91f28;
+}
+
+/* MEDIA QUERYS CHANGE THIS AFTER 768PX */
+@media screen and (min-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+    z-index: 99999;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 99999;
+  }
+
+  .main-nav li {
+    margin: 0;
+    letter-spacing: 0.18rem;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+    letter-spacing: 2px
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  /* HOVER COLOR ON BIG SCREEN */
+  .logo:hover,
+  .nav-links:hover {
+    /* color: rgb(240, 144, 18); */
+    color: #df2935;
+  }
+
+  /* FOOTER */
+
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  footer li {
+    margin: 20px;
+  }
+
+  footer p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+}
+
+
+/* FONTS */
+@font-face {
+  font-family: Roboto-regular;
+  src: url(fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-light;
+  src: url(fonts/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Roboto-bold;
+  src: url(fonts/Roboto-Bold.ttf) format('truetype');
+}

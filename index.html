@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description="
+    content="HTH CARS AB är en bilverskad i Göteborg. Vi finns i Arröds Industriområde. Vi reparerar,felsöker,byter däck till alla olika bilmodeller." />
+  <link rel="stylesheet" href="index.css" />
+  <title>HTH CARS AB, Mekaniker i Göteborg</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<!-- BODY -->
+
+<body>
+  <!-- NAV -->
+  <header>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <button class="menu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          aria-label="Main Menu">
+          <svg width="35" height="35" viewBox="0 0 100 100">
+            <path class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+      </span>
+      <a href="index.html" class="logo">HTH CARS</a>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="index.html" class="nav-links">Hem</a>
+        </li>
+        <li>
+          <a href="bokatid.html" class="nav-links">Boka tid</a>
+        </li>
+        <li>
+          <a href="omoss.html" class="nav-links">Om oss</a>
+        </li>
+        <li>
+          <a href="blogg.html" class="nav-links">Blogg</a>
+        </li>
+        <li>
+          <a href="#hittaOss" class="nav-links">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- LANDING PAGE -->
+  <div class="bg-pan-bl" id="containerCar">
+    <section id="search">
+      <h1 class="tracking-in-expand">HTH CARS</h1>
+      <p class="text-focus-in">
+        Ta hand om dig. Vi tar hand om bilen så du kan du slappna av så
+        länge..<br />
+        Boka tid nu.
+      </p>
+      <form id="sok" action="#" method="post">
+        <!-- <label for="regnummer">REG NR:</label> -->
+        <input title="Skriv ditt REG NR" aria-label="registerings nummer" id="regnummer" name="regnummer"
+          placeholder="ABC 123" type="text" />
+        <input id="button" type="submit" value="Boka tid" />
+      </form>
+    </section>
+    <i id="blink" class="fa fa-chevron-down" aria-hidden="true"></i>
+  </div>
+
+  <!-- MINI NUMMER -->
+  <div id="miniNumber">
+    <a id="nummerTop" href="tel:+46700767959"> RING 070-076 79 59</a>
+  </div>
+
+  <!-- INTRO TEXT -->
+  <section id="introText">
+    <h2>Välkommen till HTH CARS AB.</h2>
+    <p>
+      Din bilverkstad i Göteborg. Med 30 års erfarenhet av servis,
+      reparationer och felsökning på bilar. På HTH CARS jobbar vi enbart med
+      originaldelar och den senaste utrustningen marknaden kan erbjuda.
+      Självklart följer vi alltid tillverkarnas rekommendationer vid service
+      och reparation. Vi lämnar 12 månaders garanti på utfört arbete och 24
+      månaders garanti på reservdelarna. Boka din service eller reparation i
+      förväg, så bjuder vi på fri lånebil!
+      <br />
+      Att äga bil ska vara enkelt!
+    </p>
+    <br />
+    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+  </section>
+
+  <!-- MAIN -->
+  <main>
+    <article>
+      <h2>Tjänsteutbud</h2>
+      <section id="service">
+        <img srcset="
+              images/engine480x320.png,
+              images/engine800x533.png   1.5x,
+              images/engine1800x1200.jpg 2x
+            " src="/images/engine1800x1200.jpg" alt="engine" />
+        <h3>Service</h3>
+        <p>
+          För att bilen ska fungera bra, vara driftsäker och få en lång
+          livslängd behöver den förebyggande service med jämna mellanrum. I
+          många nya bilar får föraren ett meddelande på bilens display när det
+          är dags för service. Annars finns information om
+          serviceintervallerna i bilens servicebok. Regelbunden service gör
+          att bilen mår bättre och minskar risken för stora
+          reparationskostnader.
+        </p>
+      </section>
+
+      <section id="felsokning">
+        <img srcset="
+              images/mechanic-engine480x319.jpeg,
+              images/mechanic-engine800x532.jpeg   1.5x,
+              images/mechanic-engine2160x1437.jpeg 2x
+            " src="/images/mechanic-engine2160x1437.jpeg" alt="Mechanic working" />
+        <h3>Felsökning</h3>
+        <p>
+          Moderna bilar är fulla av elektronik, försök inte göra det själv där
+          hemma. Verkstäderna har verktyg för att snabbt kunna avgöra vad
+          felet är. Det är bara verkstäder med rätt utrustning och utbildade
+          mekaniker som klarar av att göra en korrekt felsökning och som kan
+          ge en diagnos. Det spelar en stor roll för att felet ska kunna
+          åtgärdas på rätt sätt och för att du har den modernaste programvaran
+          även efter verkstadsbesöket. Felsökning kan vara ett av de mest
+          tidskrävande jobben. Mekanikerna säger ofta att när ”verktyget visar
+          en error”, kan det finnas 5-10 andra komponenter som orsakar
+          problemet. Numera styrs de flesta bilar av en dator som kan
+          övervakas, uppgraderas och kontrolleras ifall du har rätt verktyg
+          för det.
+        </p>
+      </section>
+
+      <section id="solfilm">
+        <img srcset="
+              images/auto-window480x320.jpg,
+              images/auto-window752x501.jpg 1.5x
+            " src="images/auto-window752x501.jpg" alt="Mechanic working" />
+        <h3>Solfilm</h3>
+        <p>
+          Vi har solfilm i flera olika toningar som har olika ljusinsläpp. Vår
+          ljusaste film är nästan helt transparent men stoppar ändå femtio
+          procent av solens värmestrålning. Värme i bilen upplevs ofta
+          besvärande för resenärer och husdjur. Olika mörkhetsgrader på
+          solfilmen förstärker bilens visuella framtoning. Vi har till exempel
+          marknadens mörkaste solfilm som effektivt skyddar både mot värme och
+          insyn.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <!-- DÄCK -->
+  <article id="containerDack">
+    <h2>DÄCK</h2>
+    <section id="dack0">
+      <h3>Vi erbjuder följande däcktjänster:</h3>
+      <ul>
+        <li>Balansering</li>
+        <li>Däckomläggning</li>
+        <li>Skriften</li>
+        <li>Däckbyten</li>
+        <li>Skiften</li>
+        <li>Däckreparationer</li>
+        <li>Säsongsförvaring</li>
+        <li>Rådgivning</li>
+      </ul>
+    </section>
+
+    <section id="dack1">
+      <h3>Däckbyte & Hjulskifte</h3>
+      <p>
+        Att ha rätt däck på bilen anpassade efter rådande säsong är ett måste
+        för en säker körupplevelse på vägarna. Att byta däck på din bil kan
+        kännas som en betungande uppgift som kräver både verktyg och utrymme.
+        Vi skiftar dina hjul snabbt och enkelt medans du väntar. Tid för att
+        byta bokar du direkt här Online.
+      </p>
+    </section>
+
+    <section id="dack2">
+      <h3>Däckhotell</h3>
+      <p>
+        Spara tid, arbete och utrymme. Checka in dina däck på HTH Däckhotell. Här erbjuder vi förstklassig
+        däckförvaring och tar hand om dina däck på allra bästa sätt. När däcken är redo för en ny säsong på vägarna
+        hjälper vi dig med däckskiftet medan du njuter av en god kopp kaffe under tiden.
+      </p>
+    </section>
+
+    <section id="dack3">
+      <h3>Hjulinställningar & Balansering</h3>
+      <p>
+        Känner du att ratten "darrar" medans du kör? Då är det hjulen som
+        behöver balanseras. Boka en tid här Online så justerar vi det snabbt.
+      </p>
+    </section>
+
+    <section id="dack4">
+      <h3>Lagning av däck</h3>
+      <p>
+        Visste du att däck går att laga? Har du fått en pyspunka är det
+        möjligt att reparera istället för att köpa nya däck. Ett däck som har
+        fått punktering bör alltid repareras av en proffs. Lagningen ska göras
+        så fort som möjligt efter skadan så att vatten eller smuts inte hinner
+        skada däcket ytterligare. Fortsätter du att köra med det skadade
+        däcket kan det leda till att däcket inte går att reparera och även
+        fordonet kan skadas. Boka en tid reda idag.
+      </p>
+    </section>
+
+    <section id="dack5">
+      <h2>Vi kan Däck!</h2>
+      <img srcset="
+            images/tires-dark-480x270.jpg  480w,
+            images/tires-dark-800x450.jpg  800w,
+            images/tires-dark-1920.jpg    1200w
+          " sizes="(max-width: 600px) 480px,
+            1920px" src="images/tires-dark-1920.jpg" alt="Tires" />
+      <p>
+        Slå dig ner och njut av en kopp kaffe medan vi reparerar ditt trasiga
+        däck, skiftar till sommar-/vinterdäck eller förser din bil med helt
+        nya däck. Vi arbetar med den senaste tekniken i en modernt utrustad
+        verkstad. Vi hjälper dig gärna med rådgivning när det gäller däck och
+        allt allt du undrar kring din bil. Om du inte har plats för
+        däckförvaring hemma löser vi det också! <br />
+        Välkommen!
+      </p>
+    </section>
+  </article>
+
+  <!-- HITTA TILL OSS -->
+  <section id="hittaOss">
+    <h2>Hitta till oss</h2>
+    <!-- GOOGLE MAPS -->
+    <div id="map"></div>
+
+    <section>
+      <h3>Adress</h3>
+      <p>Aröds Industriväg 9 422 43 Göteborg Sverige</p>
+    </section>
+
+    <section>
+      <h3>Kontakt</h3>
+      <div id="phone">
+        <a id="nummer" href="tel:+46700767959"> 070-076 79 59</a>
+      </div>
+    </section>
+
+    <section id="tider">
+      <h3>Öppettider:</h3>
+      <p>
+        mån: 09:00–15:30 <br />
+        tis: 09:00–15:30<br />
+        ons: 09:00–15:30<br />
+        tors: 09:00–15:30<br />
+        fre: 09:00–18:00<br />
+        lör: 10:00–15:00<br />
+        sön: Stängt
+      </p>
+    </section>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <ul>
+      <li>
+        <a href="#">Information om Cookies</a>
+      </li>
+      <li>
+        <a href="#">Hantering av personuppgifter</a>
+      </li>
+      <li>
+        <a href="#">Juridisk information</a>
+      </li>
+      <li>
+        <a href="#">Logga in</a>
+      </li>
+    </ul>
+    <p>Copyright © 2020 HTH CARS AB</p>
+  </footer>
+
+  <!-- JAVASCRIPT FOR NAV -->
+  <script>
+    let mainNav = document.getElementById("js-menu");
+    let navBarToggle = document.getElementById("js-navbar-toggle");
+
+    navBarToggle.addEventListener("click", function () {
+      mainNav.classList.toggle("active");
+    });
+
+    // GOOGLE MAPS
+
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var location = {
+        lat: 57.732865,
+        lng: 11.957092
+      };
+      // The map, centered at Uluru
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 18,
+        center: location,
+      });
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map
+      });
+    }
+  </script>
+
+  <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+  -->
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRvThFvHSHI0T-4Zp4aG4qTG2jmxpvtk0&callback=initMap"></script>
+</body>
+
+</html>
