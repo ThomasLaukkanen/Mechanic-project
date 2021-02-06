@@ -1,3 +1,2 @@
 # Mechanic-project
-My first Website for a mechanic shop
-This was a school project.
+My first website for a mechanic shop, this was a school project made with just html and css.
